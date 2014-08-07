@@ -1,5 +1,13 @@
 Neo4j in a Docker Container
 =========
+Instant Neo4j without having to install Java!
+
+## What is it good for?
+
+[Vagrant](http://vagrantup.com) and [Docker](http://docker.com) enable rapid provisioning and instant virtualization for your development needs. 
+
+Use this repo to launch a [Neo4j](http://neo4j.org) instance on your local machine for development in just a few commands. 
+
 
 
 Dependencies
@@ -22,6 +30,7 @@ To Get Started
 4. Fire up Vagrant with `vagrant up --provider=docker` from the project root.
 5. After a few seconds, check the Neo4j dashboard at [localhost:7474](http://localhost:7474)
 
+Once your image is pulled and built, take it down with `vagrant halt` and launch again any time with `vagrant up --provider=docker`.
 
 
 Contributing
