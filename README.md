@@ -10,8 +10,7 @@ Use this repo to launch a [Neo4j](http://neo4j.org) instance on your local machi
 
 
 
-Dependencies
----
+## Dependencies
 
 [Vagrant](https://www.vagrantup.com/downloads.html) (>=1.6)
 
@@ -21,8 +20,7 @@ Dependencies
 
 
 
-To Get Started
----
+## To Get Started
 
 1. Clone the repository `git clone git@github.com:amoose/docker-neo4j.git`
 2. Tell Vagrant where to find Docker by setting `export DOCKER_HOST=tcp://localhost:2375` if not already set
@@ -33,8 +31,12 @@ To Get Started
 Once your image is pulled and built, take it down with `vagrant halt` and launch again any time with `vagrant up --provider=docker`.
 
 
-Contributing
----
+## Credits
+
+Thanks to [Jack Preston](http://fateamenable.com/installing-and-running-neo4j-inside-docker/) for his writeup of the Dockerfile and pointing out the IP-binding issue. 
+
+
+## Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b feature/my-new-feature`)
