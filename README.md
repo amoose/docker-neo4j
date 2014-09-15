@@ -25,8 +25,9 @@ Use this repo to launch a [Neo4j](http://neo4j.org) instance on your local machi
 1. Clone the repository `git clone git@github.com:amoose/docker-neo4j.git`
 2. Tell Vagrant where to find Docker by setting `export DOCKER_HOST=tcp://localhost:2375` if not already set
 3. Be sure docker is running (if using boot2docker run `boot2docker init` and `boot2docker up`) and pull down the trusted build from the docker registry with `docker pull dockerfile/java`.
-4. Fire up Vagrant with `vagrant up --provider=docker` from the project root.
-5. After a few seconds, check the Neo4j dashboard at [localhost:7474](http://localhost:7474)
+4. Build the custom neo4j image with `docker build -t neo4j .`
+5. Fire up Vagrant with `vagrant up --provider=docker` from the project root.
+6. After a few seconds, check the Neo4j dashboard at [localhost:7474](http://localhost:7474)
 
 Once your image is pulled and built, take it down with `vagrant halt` and launch again any time with `vagrant up --provider=docker`.
 
