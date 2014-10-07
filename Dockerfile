@@ -9,9 +9,9 @@ RUN apt-get -qq install -y wget lsof
 
 # Install Neo4j
 WORKDIR /usr/bin  
-RUN wget -q http://dist.neo4j.org/neo4j-community-2.0.1-unix.tar.gz  
-RUN tar xf neo4j-community-2.0.1-unix.tar.gz  
-RUN ln -s neo4j-community-2.0.1 neo4j
+RUN wget http://dist.neo4j.org/neo4j-community-2.1.5-unix.tar.gz
+RUN tar xf neo4j-community-2.1.5-unix.tar.gz  
+RUN ln -s neo4j-community-2.1.5 neo4j
 
 ### NEW
 #
